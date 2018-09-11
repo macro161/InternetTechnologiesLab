@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ligoninė>
+    <personalas>
+        <medicinos_personalas>
+            <daktarai>
+                <daktaras>
+                    <vardas> Petras </vardas>
+                    <pavardė> Petrauskas </pavardė>
+                    <gimimo_metai> 1976-09-21 <gimimo_metai>
+                    <alga> 2500.56 </alga>
+                    <darbo_patirtis> 15 </darbo_patirtis> 
+                    <pacientai>
+                        <pacientas> Jonas Jonaitis </pacientas>
+                        <pacientas> Toma Tomaitienė </pacientas>
+                    <pacientai>
+                </daktaras>
+                <daktaras>
+                    <vardas> Agnė </vardas>
+                    <pavardė> Agnevičienė </pavardė>
+                    <gimimo_metai> 1980-03-11 <gimimo_metai>
+                    <alga> 2810.56 </alga>
+                    <darbo_patirtis> 10 </darbo_patirtis> 
+                    <pacientai>
+                        <pacientas> Rasa Rasauskytė </pacientas>
+                    <pacientai>
+                </daktaras>
+            </daktarai>
+
+            <seselės>
+                <seselė>
+                    <vardas> Greta </vardas>
+                    <pavardė> Gretaitė </pavardė>
+                    <gimimo_metai> 1990-09-09 <gimimo_metai>
+                    <alga> 999.99 </alga>
+                    <darbo_patirtis> 3 </darbo_patirtis> 
+                    <pacientai>
+                        <pacientas> Jonas Jonaitis </pacientas>
+                    <pacientai>
+                </seselė>
+                <seselė>
+                    <vardas> Kazys </vardas>
+                    <pavardė> Kaziliauskas </pavardė>
+                    <gimimo_metai> 1985-04-19 <gimimo_metai>
+                    <alga> 1545.29 </alga>
+                    <darbo_patirtis> 6 </darbo_patirtis> 
+                    <pacientai>
+                        <pacientas> Toma Tomaitienė </pacientas>
+                        <pacientas> Rasa Rasauskytė </pacientas>
+                    <pacientai>
+                </seselė>
+            </seselės>
+        </medicinos_personalas>
+
+        <pagalbinis_personalas>
+        </pagalbinis_personalas>
+    </personalas>
+
+    <pacientai>
+        <pacientas>
+            <vardas> Jonas </vardas>
+            <pavardė> Jonaitis </pavardė>
+            <gimimo_metai> 1980-01-10 </gimimo_metai>
+            <lytis> Vyras </lytis>
+            <palata> 356 </palata>
+            <gydytojai> 
+                <gydytojas> Petras Petrauskas </gydytojas>
+                <gydytojas> Greta Gretaitė </gydytojas>
+            </gydytojai>
+        </pacientas>
+
+        <pacientas>
+            <vardas> Toma </vardas>
+            <pavardė> Tomaitienė </pavardė>
+            <gimimo_metai> 1996-07-07 </gimimo_metai>
+            <lytis> Moteris </lytis>
+            <palata> 258 </palata>
+            <gydytojai> 
+                <gydytojas> Kazys Kaziliauskas </gydytojas>
+                <gydytojas> Petras Petrauskas </gydytojas>
+            </gydytojai>
+        </pacientas>
+
+        <pacientas>
+            <vardas> Rasa </vardas>
+            <pavardė> Rasauskytė </pavardė>
+            <gimimo_metai> 1999-01-06 </gimimo_metai>
+            <lytis> Moteris </lytis>
+            <palata> 198 </palata>
+            <gydytojai> 
+                <gydytojas> Kazys Kaziliauskas </gydytojas>
+                <gydytojas> Agnė Agnevičienė </gydytojas>
+            </gydytojai>
+        </pacientas>
+    </pacientas>
+</ligoninė>
