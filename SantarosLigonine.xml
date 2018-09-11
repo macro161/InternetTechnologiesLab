@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ligoninė>
-    <pr:personalas xmlns:pe="http://santa.lt/personalas">
+    <pe:personalas xmlns:pe="http://santa.lt/personalas">
         <pe:medicinos_personalas>
             <pe:daktarai>
                 <pe:daktaras id="5168">
@@ -52,44 +52,44 @@
         </pe:medicinos_personalas>
     </pe:personalas>
 
-    <li:pacientai xmlns:li="http://santa.lt/ligoniai">
-        <li:pacientas id="5568">
-            <li:vardas> Jonas </li:vardas>
-            <li:pavardė> Jonaitis </li:pavardė>
-            <li:gimimo_metai> 1980-01-10 </li:gimimo_metai>
-            <li:lytis> Vyras </li:lytis>
-            <li:palata> 356 </li:palata>
-            <li:gydytojai> 
-                <li:gydytojas> Petras Petrauskas </li:gydytojas>
-                <li:gydytojas> Greta Gretaitė </li:gydytojas>
-            </li:gydytojai>
-            <li:liga pavojaus_procentas="5">Plaučių uždegimas</li:liga>
-        </li:pacientas>
+    <pacientai xmlns="http://santa.lt/ligoniai">
+        <pacientas id="5568">
+            <vardas> Jonas </vardas>
+            <pavardė> Jonaitis </pavardė>
+            <gimimo_metai> 1980-01-10 </gimimo_metai>
+            <lytis> Vyras </lytis>
+            <palata> 356 </palata>
+            <gydytojai> 
+                <gydytojas> Petras Petrauskas </gydytojas>
+                <gydytojas> Greta Gretaitė </gydytojas>
+            </gydytojai>
+            <liga pavojaus_procentas="5">Plaučių uždegimas</liga>
+        </pacientas>
 
-        <li:pacientas id="7488">
-            <li:vardas> Toma </li:vardas>
-            <li:pavardė> Tomaitienė </li:pavardė>
-            <li:gimimo_metai> 1996-07-07 </li:gimimo_metai>
-            <li:lytis> Moteris </li:lytis>
-            <li:palata> 258 </li:palata>
-            <li:gydytojai> 
-                <li:gydytojas> Kazys Kaziliauskas </li:gydytojas>
-                <li:gydytojas> Petras Petrauskas </li:gydytojas>
-            </li:gydytojai>
-            <li:liga pavojaus_procentas="25" >Kepenų nepakankamumas</li:liga>
-        </li:pacientas>
+        <pacientas id="7488">
+            <vardas> Toma </vardas>
+            <pavardė> Tomaitienė </pavardė>
+            <gimimo_metai> 1996-07-07 </gimimo_metai>
+            <lytis> Moteris </lytis>
+            <palata> 258 </palata>
+            <gydytojai> 
+                <gydytojas> Kazys Kaziliauskas </gydytojas>
+                <gydytojas> Petras Petrauskas </gydytojas>
+            </gydytojai>
+            <liga pavojaus_procentas="25" >Kepenų nepakankamumas</liga>
+        </pacientas>
 
-        <li:pacientas id="1598">
-            <li:vardas> Rasa </li:vardas>
-            <li:pavardė> Rasauskytė </li:pavardė>
-            <li:gimimo_metai> 1999-01-06 </li:gimimo_metai>
-            <li:lytis> Moteris </li:lytis>
-            <li:palata> 198 </li:palata>
-            <li:gydytojai> 
-                <li:gydytojas> Kazys Kaziliauskas </li:gydytojas>
-                <li:gydytojas> Agnė Agnevičienė </li:gydytojas>
-            </li:gydytojai>
-            <li:liga pavojaus_procentas="95">Smegenų auglys</li:liga>
-        </li:pacientas>
-    </li:pacientas>
+        <pacientas id="1598">
+            <vardas> Rasa </vardas>
+            <pavardė> Rasauskytė </pavardė>
+            <gimimo_metai> 1999-01-06 </gimimo_metai>
+            <lytis> Moteris </li:lytis>
+            <palata> 198 </li:palata>
+            <gydytojai> 
+                <gydytojas> Kazys Kaziliauskas </gydytojas>
+                <gydytojas> Agnė Agnevičienė </gydytojas>
+            </gydytojai>
+            <liga pavojaus_procentas="95">Smegenų auglys</liga>
+        </pacientas>
+    </pacientai>
 </ligoninė>
