@@ -1,9 +1,13 @@
-/ligonine/pe:personalas/pe:medicinos_personalas/pe:daktarai/daktaras[@id=5852]
-/ligonine/pe:personalas/pe:medicinos_personalas/pe:daktarai/daktaras[@id=5852]/descendant::pe:alga/text()
-/ligonine/pe:personalas/pe:medicinos_personalas/pe:daktarai/daktaras[@id=5852]/ancestor::*
-/ligonine/pe:personalas/pe:medicinos_personalas/pe:daktarai/daktaras[@id=5168]/following-sibling::daktaras[pe:vardas = 'Agnė']/pe:alga/text()
-/ligonine/pe:personalas/pe:medicinos_personalas/pe:daktarai/daktaras[@id=5852]/preceding-sibling::daktaras[pe:vardas = 'Petras']/pe:gimimo_metai/text()
-/ligonine/pe:personalas/pe:medicinos_personalas/pe:daktarai/daktaras[@id=5168]/following::daktaras[pe:pacientas = 'Rasa Rasauskaitė']
-/ligonine/pe:personalas/pe:medicinos_personalas/pe:daktarai/daktaras[@id=5852]/preceding::daktaras[pe:pavarde = 'Petrauskas']/pe:darbo_patirties/text()
-/ligonine/pe:personalas/pe:medicinos_personalas/pe:daktarai/daktaras[@id=5852]/attribute/text()
+/ligonine/pe:personalas/pe:medicinos_personalas/pe:daktarai/pe:daktaras[@id=5852]
+/ligonine/pe:personalas/pe:medicinos_personalas/pe:daktarai/pe:daktaras[@id=5852]/descendant::pe:alga/text()
+/ligonine/pe:personalas/pe:medicinos_personalas/pe:daktarai/pe:daktaras[@id=5852]/ancestor::*
+/ligonine/pe:personalas/pe:medicinos_personalas/pe:daktarai/pe:daktaras[@id=5168]/following-sibling::daktaras[pe:vardas = 'Agnė']/pe:alga/text()
+/ligonine/pe:personalas/pe:medicinos_personalas/pe:daktarai/pe:daktaras[@id=5852]/preceding-sibling::daktaras[pe:vardas = 'Petras']/pe:gimimo_metai/text()
+/ligonine/pe:personalas/pe:medicinos_personalas/pe:daktarai/pe:daktaras[@id=5168]/following::daktaras[pe:pacientas = 'Rasa Rasauskaitė']
+/ligonine/pe:personalas/pe:medicinos_personalas/pe:daktarai/pe:daktaras[@id=5852]/preceding::daktaras[pe:pavarde = 'Petrauskas']/pe:darbo_patirties/text()
+/ligonine/pe:personalas/pe:medicinos_personalas/pe:daktarai/pe:daktaras[@id=5852]/attribute/text()
 
+/ligonine/pacientai/pacientas[/ligonine/pacientai/pacientas/gydytojai/gydytojas[text() = 'Petras Petrauskas']]
+
+count(/ligonine/pacientai/pacientas)
+sum(/ligonine/pe:personalas/pe:medicinos_personalas/pe:daktarai/pe:daktaras/alga/text())
