@@ -1,98 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ligoninė>
-    <personalas>
-        <medicinos_personalas>
-            <daktarai>
-                <daktaras id="5168">
-                    <vardas> Petras </vardas>
-                    <pavardė> Petrauskas </pavardė>
-                    <gimimo_metai> 1976-09-21 <gimimo_metai>
-                    <alga valiuta="EU"> 2500.56 </alga>
-                    <darbo_patirtis> 15 </darbo_patirtis> 
-                    <pacientai>
-                        <pacientas id="5568"> Jonas Jonaitis </pacientas>
-                        <pacientas id="7488"> Toma Tomaitienė </pacientas>
-                    <pacientai>
-                </daktaras>
-                <daktaras id="5852">
-                    <vardas> Agnė </vardas>
-                    <pavardė> Agnevičienė </pavardė>
-                    <gimimo_metai> 1980-03-11 <gimimo_metai>
-                    <alga valiuta="EU"> 2810.56 </alga>
-                    <darbo_patirtis> 10 </darbo_patirtis> 
-                    <pacientai>
-                        <pacientas id="1598"> Rasa Rasauskytė </pacientas>
-                    <pacientai>
-                </daktaras>
-            </daktarai>
+    <pr:personalas xmlns:pe="http://santa.lt/personalas">
+        <pe:medicinos_personalas>
+            <pe:daktarai>
+                <pe:daktaras id="5168">
+                    <pe:vardas> Petras </pe:vardas>
+                    <pe:pavardė> Petrauskas </pe:pavardė>
+                    <pe:gimimo_metai> 1976-09-21 <pe:gimimo_metai>
+                    <pe:alga valiuta="EU"> 2500.56 </pe:alga>
+                    <pe:darbo_patirtis trukmė="metai"> 15 </pe:darbo_patirtis> 
+                    <pe:pacientai>
+                        <pe:pacientas id="5568"> Jonas Jonaitis </pe:pacientas>
+                        <pe:pacientas id="7488"> Toma Tomaitienė </pe:pacientas>
+                    <pe:pacientai>
+                </pe:daktaras>
+                <pe:daktaras id="5852">
+                    <pe:vardas> Agnė </pe:vardas>
+                    <pe:pavardė> Agnevičienė </pe:pavardė>
+                    <pe:gimimo_metai> 1980-03-11 <pe:gimimo_metai>
+                    <pe:alga valiuta="EU"> 2810.56 </pe:alga>
+                    <pe:darbo_patirtis trukmė="metai"> 10 </pe:darbo_patirtis> 
+                    <pe:pacientai>
+                        <pe:pacientas id="1598"> Rasa Rasauskytė </pe:pacientas>
+                    <pe:pacientai>
+                </pe:daktaras>
+            </pe:daktarai>
 
-            <seselės>
-                <seselė id="6873">
-                    <vardas> Greta </vardas>
-                    <pavardė> Gretaitė </pavardė>
-                    <gimimo_metai> 1990-09-09 <gimimo_metai>
-                    <alga valiuta="EU"> 999.99 </alga>
-                    <darbo_patirtis> 3 </darbo_patirtis> 
-                    <pacientai>
-                        <pacientas id="5568"> Jonas Jonaitis </pacientas>
-                    <pacientai>
-                </seselė>
-                <seselė id="3578">
-                    <vardas> Kazys </vardas>
-                    <pavardė> Kaziliauskas </pavardė>
-                    <gimimo_metai> 1985-04-19 <gimimo_metai>
-                    <alga valiuta="EU"> 1545.29 </alga>
-                    <darbo_patirtis> 6 </darbo_patirtis> 
-                    <pacientai>
-                        <pacientas id="7488"> Toma Tomaitienė </pacientas>
-                        <pacientas id="1598"> Rasa Rasauskytė </pacientas>
-                    <pacientai>
-                </seselė>
-            </seselės>
-        </medicinos_personalas>
+            <pe:seselės>
+                <pe:seselė id="6873">
+                    <pe:vardas> Greta </pe:vardas>
+                    <pe:pavardė> Gretaitė </pe:pavardė>
+                    <pe:gimimo_metai> 1990-09-09 <pe:gimimo_metai>
+                    <pe:alga valiuta="EU"> 999.99 </pe:alga>
+                    <pe:darbo_patirtis trukmė="metai"> 3 </pe:darbo_patirtis> 
+                    <pe:pacientai>
+                        <pe:pacientas id="5568"> Jonas Jonaitis </pe:pacientas>
+                    <pe:pacientai>
+                </pe:seselė>
+                <pe:seselė id="3578">
+                    <pe:vardas> Kazys </pe:vardas>
+                    <pe:pavardė> Kaziliauskas </pe:pavardė>
+                    <pe:gimimo_metai> 1985-04-19 </pe:gimimo_metai>
+                    <pe:alga valiuta="EU"> 1545.29 </pe:alga>
+                    <pe:darbo_patirtis trukmė="metai"> 6 </pe:darbo_patirtis> 
+                    <pe:pacientai>
+                        <pe:pacientas id="7488"> Toma Tomaitienė </pe:pacientas>
+                        <pe:pacientas id="1598"> Rasa Rasauskytė </pe:pacientas>
+                    <pe:pacientai>
+                </pe:seselė>
+            </pe:seselės>
+        </pe:medicinos_personalas>
+    </pe:personalas>
 
-        <pagalbinis_personalas>
-        </pagalbinis_personalas>
-    </personalas>
+    <li:pacientai xmlns:li="http://santa.lt/ligoniai">
+        <li:pacientas id="5568">
+            <li:vardas> Jonas </li:vardas>
+            <li:pavardė> Jonaitis </li:pavardė>
+            <li:gimimo_metai> 1980-01-10 </li:gimimo_metai>
+            <li:lytis> Vyras </li:lytis>
+            <li:palata> 356 </li:palata>
+            <li:gydytojai> 
+                <li:gydytojas> Petras Petrauskas </li:gydytojas>
+                <li:gydytojas> Greta Gretaitė </li:gydytojas>
+            </li:gydytojai>
+            <li:liga pavojaus_procentas="5">Plaučių uždegimas</li:liga>
+        </li:pacientas>
 
-    <pacientai>
-        <pacientas id="5568">
-            <vardas> Jonas </vardas>
-            <pavardė> Jonaitis </pavardė>
-            <gimimo_metai> 1980-01-10 </gimimo_metai>
-            <lytis> Vyras </lytis>
-            <palata> 356 </palata>
-            <gydytojai> 
-                <gydytojas> Petras Petrauskas </gydytojas>
-                <gydytojas> Greta Gretaitė </gydytojas>
-            </gydytojai>
-            <liga pavojaus_procentas="5">Plaučių uždegimas</liga>
-        </pacientas>
+        <li:pacientas id="7488">
+            <li:vardas> Toma </li:vardas>
+            <li:pavardė> Tomaitienė </li:pavardė>
+            <li:gimimo_metai> 1996-07-07 </li:gimimo_metai>
+            <li:lytis> Moteris </li:lytis>
+            <li:palata> 258 </li:palata>
+            <li:gydytojai> 
+                <li:gydytojas> Kazys Kaziliauskas </li:gydytojas>
+                <li:gydytojas> Petras Petrauskas </li:gydytojas>
+            </li:gydytojai>
+            <li:liga pavojaus_procentas="25" >Kepenų nepakankamumas</li:liga>
+        </li:pacientas>
 
-        <pacientas id="7488">
-            <vardas> Toma </vardas>
-            <pavardė> Tomaitienė </pavardė>
-            <gimimo_metai> 1996-07-07 </gimimo_metai>
-            <lytis> Moteris </lytis>
-            <palata> 258 </palata>
-            <gydytojai> 
-                <gydytojas> Kazys Kaziliauskas </gydytojas>
-                <gydytojas> Petras Petrauskas </gydytojas>
-            </gydytojai>
-            <liga pavojaus_procentas="25" >Kepenų nepakankamumas</liga>
-        </pacientas>
-
-        <pacientas id="1598">
-            <vardas> Rasa </vardas>
-            <pavardė> Rasauskytė </pavardė>
-            <gimimo_metai> 1999-01-06 </gimimo_metai>
-            <lytis> Moteris </lytis>
-            <palata> 198 </palata>
-            <gydytojai> 
-                <gydytojas> Kazys Kaziliauskas </gydytojas>
-                <gydytojas> Agnė Agnevičienė </gydytojas>
-            </gydytojai>
-            <liga pavojaus_procentas="95">Smegenų auglys</liga>
-        </pacientas>
-    </pacientas>
+        <li:pacientas id="1598">
+            <li:vardas> Rasa </li:vardas>
+            <li:pavardė> Rasauskytė </li:pavardė>
+            <li:gimimo_metai> 1999-01-06 </li:gimimo_metai>
+            <li:lytis> Moteris </li:lytis>
+            <li:palata> 198 </li:palata>
+            <li:gydytojai> 
+                <li:gydytojas> Kazys Kaziliauskas </li:gydytojas>
+                <li:gydytojas> Agnė Agnevičienė </li:gydytojas>
+            </li:gydytojai>
+            <li:liga pavojaus_procentas="95">Smegenų auglys</li:liga>
+        </li:pacientas>
+    </li:pacientas>
 </ligoninė>
