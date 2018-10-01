@@ -1,6 +1,6 @@
 
 <ligonine>
-    <pe:personalas xmlns:pe="http://santa.lt/personalas">
+    <pe:personalas xmlns:pe="sadas">
         <pe:medicinos_personalas>
             <pe:daktarai>
                 <pe:daktaras id="5168">
