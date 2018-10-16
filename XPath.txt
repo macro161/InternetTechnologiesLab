@@ -11,3 +11,5 @@
 
 count(/ligonine/pacientai/pacientas)
 sum(/ligonine/personalas/medicinos_personalas/daktarai/daktaras/alga/text())
+
+(/ligonine/personalas/medicinos_personalas/daktarai/daktaras[@id=5852]/vardas/text())> (/ligonine/personalas/medicinos_personalas/daktarai/daktaras[@id=5852]/alga)
