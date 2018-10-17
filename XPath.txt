@@ -1,13 +1,12 @@
 /ligonine/personalas/medicinos_personalas/daktarai/daktaras[@id=5852]
 /ligonine/personalas/medicinos_personalas/daktarai/daktaras[@id=5852]/descendant::alga/text()
 /ligonine/personalas/medicinos_personalas/daktarai/daktaras[@id=5852]/ancestor::*
-/ligonine/personalas/medicinos_personalas/daktarai/daktaras[@id=5168]/following-sibling::daktaras[vardas = 'Agnė']/alga/text()
-/ligonine/personalas/medicinos_personalas/daktarai/daktaras[@id=5852]/preceding-sibling::daktaras[vardas = 'Petras']/gimimo_metai/text()
-/ligonine/personalas/medicinos_personalas/daktarai/daktaras[@id=5168]/following::daktaras[pacientas = 'Rasa Rasauskaitė']
-/ligonine/personalas/medicinos_personalas/daktarai/daktaras[@id=5852]/preceding::daktaras[pavarde = 'Petrauskas']/darbo_patirties/text()
-/ligonine/personalas/medicinos_personalas/daktarai/daktaras[@id=5852]/attribute/text()
+/ligonine/personalas/medicinos_personalas/daktarai/daktaras[@id=5168]/following-sibling::daktaras[1]/vardas/text()
+/ligonine/personalas/medicinos_personalas/daktarai/daktaras[@id=5852]/preceding-sibling::daktaras[1]/gimimo_metai/text()/ligonine/personalas/medicinos_personalas/daktarai/daktaras[@id=5168]/following::daktaras[pacientas = 'Rasa Rasauskaitė']
+/ligonine/personalas/medicinos_personalas/daktarai/daktaras[@id=5852]/preceding::daktaras[alga>2200]/darbo_patirtis/text()
+/ligonine/personalas/medicinos_personalas/daktarai/daktaras[@id=5852]/alga/attribute/text()
 
-/ligonine/pacientai/pacientas[/ligonine/pacientai/pacientas/gydytojai/gydytojas[text() = 'Petras Petrauskas']]
+/ligonine/pacientai/pacientas[palata = /ligonine/pacientai/pacientas[@id=5568]/palata/text()]
 
 count(/ligonine/pacientai/pacientas)
 sum(/ligonine/personalas/medicinos_personalas/daktarai/daktaras/alga/text())
