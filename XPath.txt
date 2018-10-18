@@ -14,3 +14,11 @@ sum(/ligonine/personalas/medicinos_personalas/daktarai/daktaras/alga/text())
 (/ligonine/personalas/medicinos_personalas/daktarai/daktaras[@id=5852]/vardas/text())> (/ligonine/personalas/medicinos_personalas/daktarai/daktaras[@id=5852]/alga)
 
 (/ligonine/personalas/medicinos_personalas/daktarai/daktaras[@id=5852]/preceding-sibling::daktaras[1]) | (/ligonine/personalas/medicinos_personalas/seseles/sesele[@id=6873]/following-sibling::sesele[1])
+
+/ligonine/personalas/medicinos_personalas/daktarai/daktaras = true()
+/ligonine/personalas/medicinos_personalas/daktarai/daktaras = 7
+/ligonine/personalas/medicinos_personalas/daktarai/daktaras[@id=5852]/vardas =  /ligonine/personalas/medicinos_personalas/daktarai/daktaras
+/ligonine/personalas/medicinos_personalas/daktarai/daktaras = /ligonine/personalas/medicinos_personalas/seseles/sesele
+
+/ligonine/personalas/medicinos_personalas/daktarai < /ligonine/personalas/medicinos_personalas/seseles
+
