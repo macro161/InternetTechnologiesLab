@@ -4,47 +4,47 @@
           "daktarai": {
              "daktaras": [
                 {
-                   "@id": "5168",
+                   "@id": 5168,
                    "vardas": "Petras",
                    "pavarde": "Petrauskas",
                    "gimimo_metai": "1976-09-21",
                    "alga": {
                       "@valiuta": "EU",
-                      "#text": "2500.56"
+                      "#value": 2500.56
                    },
                    "darbo_patirtis": {
                       "@trukme": "metai",
-                      "#text": "15"
+                      "#value": 15
                    },
                    "pacientai": {
                       "pacientas": [
                          {
-                            "@id": "5568",
+                            "@id": 5568,
                             "#text": "Jonas Jonaitis"
                          },
                          {
-                            "@id": "7488",
+                            "@id": 7488,
                             "#text": "Toma Tomaitienė"
                          }
                       ]
                    }
                 },
                 {
-                   "@id": "5852",
+                   "@id": 5852,
                    "vardas": "Agnė",
                    "pavarde": "Agnevičienė",
                    "gimimo_metai": "1980-03-11",
                    "alga": {
                       "@valiuta": "EU",
-                      "#text": "2810.56"
+                      "#value": 2810.56
                    },
                    "darbo_patirtis": {
                       "@trukme": "metai",
-                      "#text": "10"
+                      "#value": 10
                    },
                    "pacientai": {
                       "pacientas": {
-                         "@id": "1598",
+                         "@id": 1598,
                          "#text": "Rasa Rasauskytė"
                       }
                    }
@@ -54,46 +54,46 @@
           "seseles": {
              "sesele": [
                 {
-                   "@id": "6873",
+                   "@id": 6873,
                    "vardas": "Greta",
                    "pavarde": "Gretaitė",
                    "gimimo_metai": "1990-09-09",
                    "alga": {
                       "@valiuta": "EU",
-                      "#text": "999.99"
+                      "#value": 999.99
                    },
                    "darbo_patirtis": {
                       "@trukme": "metai",
-                      "#text": "3"
+                      "#value": 3
                    },
                    "pacientai": {
                       "pacientas": {
-                         "@id": "5568",
+                         "@id": 5568,
                          "#text": "Jonas Jonaitis"
                       }
                    }
                 },
                 {
-                   "@id": "3578",
+                   "@id": 3578,
                    "vardas": "Kazys",
                    "pavarde": "Kaziliauskas",
                    "gimimo_metai": "1985-04-19",
                    "alga": {
                       "@valiuta": "EU",
-                      "#text": "1545.29"
+                      "#value": 1545.29
                    },
                    "darbo_patirtis": {
                       "@trukme": "metai",
-                      "#text": "6"
+                      "#value": 6
                    },
                    "pacientai": {
                       "pacientas": [
                          {
-                            "@id": "7488",
+                            "@id": 7488,
                             "#text": "Toma Tomaitienė"
                          },
                          {
-                            "@id": "1598",
+                            "@id": 1598,
                             "#text": "Rasa Rasauskytė"
                          }
                       ]
@@ -106,12 +106,12 @@
     "pacientai": {
        "pacientas": [
           {
-             "@id": "5568",
+             "@id": 5568,
              "vardas": "Jonas",
              "pavarde": "Jonaitis",
              "gimimo_metai": "1980-01-10",
              "lytis": "Vyras",
-             "palata": "356",
+             "palata": 356,
              "gydytojai": {
                 "gydytojas": [
                    "Petras Petrauskas",
@@ -119,17 +119,17 @@
                 ]
              },
              "liga": {
-                "@pavojaus_procentas": "5",
+                "@pavojaus_procentas": 5,
                 "#text": "Plaučių uždegimas"
              }
           },
           {
-             "@id": "7488",
+             "@id": 7488,
              "vardas": "Toma",
              "pavarde": "Tomaitienė",
              "gimimo_metai": "1996-07-07",
              "lytis": "Moteris",
-             "palata": "258",
+             "palata": 258,
              "gydytojai": {
                 "gydytojas": [
                    "Kazys Kaziliauskas",
@@ -137,17 +137,17 @@
                 ]
              },
              "liga": {
-                "@pavojaus_procentas": "25",
+                "@pavojaus_procentas": 25,
                 "#text": "Kepenų nepakankamumas"
              }
           },
           {
-             "@id": "1598",
+             "@id": 1598,
              "vardas": "Rasa",
              "pavarde": "Rasauskytė",
              "gimimo_metai": "1999-01-06",
              "lytis": "Moteris",
-             "palata": "198",
+             "palata": 198,
              "gydytojai": {
                 "gydytojas": [
                    "Kazys Kaziliauskas",
@@ -155,7 +155,7 @@
                 ]
              },
              "liga": {
-                "@pavojaus_procentas": "95",
+                "@pavojaus_procentas": 95,
                 "#text": "Smegenų auglys"
              }
           }
