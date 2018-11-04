@@ -1,0 +1,118 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name = "Viešbučiai" >
+    <xs:complexType>
+      <xs:sequence maxOccurs = "unbounded">
+        <xs:element ref = "Viešbutis"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name = "Viešbutis">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref = "Kambariai"/>
+        <xs:element ref = "Rezervacijos"/>
+        <xs:element ref = "Darbuotojai"/>
+      </xs:sequence>
+      <xs:attribute name = "pavadinimas" type = "xs:string"/>
+    </xs:complexType>
+    <xs:key name = "KambarioNumeris">
+      <xs:selector xpath = "Kambariai/Kambarys"/>
+      <xs:field xpath = "@nr"/>
+    </xs:key>
+    <xs:keyref name = "NuorodaĮKambarį" refer = "KambarioNumeris">
+      <xs:selector xpath = "Rezervacijos/Rezervacija"/>
+      <xs:field xpath = "@kambarys"/>
+    </xs:keyref>
+  </xs:element> 
+  
+<!-- Kambariai -->
+  <xs:element name = "Kambariai">
+    <xs:complexType mixed = "true">
+      <xs:sequence maxOccurs = "unbounded">
+        <xs:element ref = "Kambarys"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name = "Kambarys">
+    <xs:complexType>
+        <xs:sequence>
+          <xs:element ref = "VietuSkaičius"/>
+          <xs:element ref = "Kaina"/>
+        </xs:sequence>
+        <xs:attribute name = "nr" type = "xs:integer" use = "required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name = "VietuSkaičius" type = "xs:positiveInteger"/>
+  <xs:element name = "Kaina" type = "PinigaiSuValiuta"/>
+
+  <xs:simpleType name = "PinigaiType">
+    <xs:restriction base = "xs:decimal">
+      <xs:minInclusive value="0"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name = "PinigaiSuValiuta">
+    <xs:simpleContent>
+      <xs:extension base="PinigaiType">
+        <xs:attribute name = "valiuta">
+          <xs:simpleType>
+            <xs:restriction base = "xs:string">
+              <xs:enumeration value = "eur"/>
+              <xs:enumeration value = "usd"/>
+              <xs:enumeration value = "lt"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+<!-- Rezervacijos -->
+  <xs:element name = "Rezervacijos">
+    <xs:complexType>
+      <xs:sequence maxOccurs = "unbounded">
+        <xs:element ref = "Rezervacija"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name = "Rezervacija">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name = "Nuo" type = "xs:date"/>
+        <xs:element name = "Iki" type = "xs:date"/>
+      </xs:sequence>
+      <xs:attribute name = "kambarys" type = "xs:positiveInteger" use = "required"/>
+    </xs:complexType>
+  </xs:element>
+<!-- Darbuotojai -->
+  <xs:element name = "Darbuotojai">
+    <xs:complexType>
+      <xs:sequence maxOccurs = "unbounded">
+        <xs:element ref = "Darbuotojas"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name = "Darbuotojas">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name = "Vardas" type = "xs:string"/>
+      <xs:element name = "Pavardė" type = "xs:string"/>
+      <xs:element name = "Alga" type = "PinigaiSuValiuta"/>
+    </xs:sequence>
+    <xs:attribute name = "pareigos">
+      <xs:simpleType>
+        <xs:restriction base = "xs:string">
+          <xs:enumeration value = "administratorius"/>
+          <xs:enumeration value = "valytojas"/>
+          <xs:enumeration value = "kambariųTvarkytojas"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
