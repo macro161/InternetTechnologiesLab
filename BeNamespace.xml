@@ -5,23 +5,18 @@
                 <daktaras id="5168">
                     <vardas> Petras </vardas>
                     <pavarde> Petrauskas </pavarde>
-                    <gimimo_metai> 1976-09-21 </gimimo_metai>
+                    <gimimo_metai>1976-09-21</gimimo_metai>
                     <alga valiuta="EU"> 2500.56 </alga>
                     <darbo_patirtis trukme="metai"> 15 </darbo_patirtis> 
-                    <pacientai>
-                        <pacientas id="5568"> Jonas Jonaitis </pacientas>
-                        <pacientas id="7488"> Toma Tomaitienė </pacientas>
-                    </pacientai>
+                    <palatos>356 256</palatos>
                 </daktaras>
                 <daktaras id="5852">
                     <vardas> Agnė </vardas>
                     <pavarde> Agnevičienė </pavarde>
-                    <gimimo_metai> 1980-03-11 </gimimo_metai>
+                    <gimimo_metai>1980-03-11</gimimo_metai>
                     <alga valiuta="EU"> 2810.56 </alga>
                     <darbo_patirtis trukme="metai"> 10 </darbo_patirtis> 
-                    <pacientai>
-                        <pacientas id="1598"> Rasa Rasauskytė </pacientas>
-                    </pacientai>
+                    <palatos>198</palatos>
                 </daktaras>
             </daktarai>
 
@@ -29,33 +24,28 @@
                 <sesele id="6873">
                     <vardas> Greta </vardas>
                     <pavarde> Gretaitė </pavarde>
-                    <gimimo_metai> 1990-09-09 </gimimo_metai>
+                    <gimimo_metai>1990-09-09</gimimo_metai>
                     <alga valiuta="EU"> 999.99 </alga>
                     <darbo_patirtis trukme="metai"> 3 </darbo_patirtis> 
-                    <pacientai>
-                        <pacientas id="5568"> Jonas Jonaitis </pacientas>
-                    </pacientai>
+                    <palatos>356</palatos>
                 </sesele>
                 <sesele id="3578">
                     <vardas> Kazys </vardas>
                     <pavarde> Kaziliauskas </pavarde>
-                    <gimimo_metai> 1985-04-19 </gimimo_metai>
+                    <gimimo_metai>1985-04-19</gimimo_metai>
                     <alga valiuta="EU"> 1545.29 </alga>
                     <darbo_patirtis trukme="metai"> 6 </darbo_patirtis> 
-                    <pacientai>
-                        <pacientas id="7488"> Toma Tomaitienė </pacientas>
-                        <pacientas id="1598"> Rasa Rasauskytė </pacientas>
-                    </pacientai>
+                    <palatos>256 198</palatos>
                 </sesele>
             </seseles>
         </medicinos_personalas>
     </personalas>
 
-    <pacientai xmlns="http://santa.lt/ligoniai">
+    <pacientai>
         <pacientas id="5568">
             <vardas> Jonas </vardas>
             <pavarde> Jonaitis </pavarde>
-            <gimimo_metai> 1980-01-10 </gimimo_metai>
+            <gimimo_metai>1980-01-10</gimimo_metai>
             <lytis> Vyras </lytis>
             <palata> 356 </palata>
             <gydytojai> 
@@ -68,7 +58,7 @@
         <pacientas id="7488">
             <vardas> Toma </vardas>
             <pavarde> Tomaitienė </pavarde>
-            <gimimo_metai> 1996-07-07 </gimimo_metai>
+            <gimimo_metai>1996-07-07</gimimo_metai>
             <lytis> Moteris </lytis>
             <palata> 258 </palata>
             <gydytojai> 
@@ -81,7 +71,7 @@
         <pacientas id="1598">
             <vardas> Rasa </vardas>
             <pavarde> Rasauskytė </pavarde>
-            <gimimo_metai> 1999-01-06 </gimimo_metai>
+            <gimimo_metai>1999-01-06</gimimo_metai>
             <lytis> Moteris </lytis>
             <palata> 198 </palata>
             <gydytojai> 

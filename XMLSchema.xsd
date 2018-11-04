@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"> 
+    <xs:element name="ligonine">
+        <xs:complexType>
+            <xs:sequence maxOccurs="1">
+                <xs:element ref = "personalas"/>
+                <xs:element ref = "pacientai"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="personalas">
+        <xs:complexType>
+            <xs:sequence maxOccurs="1">
+                <xs:element ref = "medicinos_personalas"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="medicinos_personalas">
+        <xs:complexType>
+            <xs:sequence maxOccurs="1">
+                <xs:element ref = "daktarai"/>
+                <xs:element ref = "seseles" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="daktarai">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element ref = "daktaras"/>
+                <xs:element ref = "sesele"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element  name="daktaras">
+        <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name = "vardas" type = "xs:string"/>
+                        <xs:element name = "pavarde" type = "xs:string"/>
+                        <xs:element name = "gimimo_metai" type = "gimimoMetuTipas"/>
+                        <xs:element name = "alga" type = "algosTipas"/>                       
+                        <xs:element name = "darbo_patirtis" type="darboPatirtiesTipas" maxOccurs="1"/>
+                        <xs:element name = "palatos" type="palatosTipas"/>
+                    </xs:sequence>
+                    <xs:attribute name = "id" type = "xs:positiveInteger" use = "required"/>       
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="palatosTipas">
+        <xs:list itemType="xs:integer"/>
+    </xs:simpleType>
+
+    <xs:complexType name = "darboPatirtiesTipas">
+        <xs:simpleContent>
+            <xs:extension base = "xs:positiveInteger">
+                <xs:attribute name = "trukme">
+                    <xs:simpleType>
+                        <xs:restriction base = "xs:string">
+                            <xs:enumeration value = "dienos"/>
+                            <xs:enumeration value = "menesiai"/>
+                            <xs:enumeration value = "metai"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:simpleType name="gimimoMetuTipas">
+        <xs:restriction base = "xs:string">
+            <xs:pattern value="[12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name = "piniguTipas">
+        <xs:restriction base = "xs:decimal">
+            <xs:minInclusive value="0"/> 
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name = "algosTipas">
+        <xs:simpleContent>
+            <xs:extension base="piniguTipas">
+                <xs:attribute name = "valiuta">
+                    <xs:simpleType>
+                        <xs:restriction base = "xs:string">
+                        <xs:enumeration value = "EU"/>
+                        <xs:enumeration value = "US"/>
+                        <xs:enumeration value = "LT"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:element name="seseles">
+        <xs:complexType>
+            <xs:sequence maxOccurs="unbounded">
+                <xs:element ref = "sesele"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="sesele">
+        <xs:complexType>
+                <xs:sequence>
+                <xs:element name = "vardas" type = "xs:string"/>
+                <xs:element name = "pavarde" type = "xs:string"/>
+                <xs:element name = "gimimo_metai" type = "gimimoMetuTipas"/>
+                <xs:element name = "alga" type = "algosTipas"/>
+                <xs:element name = "darbo_patirtis" type="darboPatirtiesTipas" maxOccurs="1"/>
+                <xs:element name = "palatos" type="palatosTipas"/>
+            </xs:sequence>
+            <xs:attribute name = "id" type = "xs:positiveInteger" use = "required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="pacientai">
+        <xs:complexType>
+            <xs:sequence maxOccurs="unbounded">
+                <xs:element ref = "pacientas"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="pacientas">    
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name = "vardas" type = "xs:string"/>
+                <xs:element name = "pavarde" type = "xs:string"/>
+                <xs:element name = "gimimo_metai" type = "gimimoMetuTipas"/>
+                <xs:element name = "lytis" type = "xs:string"/>
+                <xs:element name = "palata" type="xs:integer"/>
+                <xs:element ref = "gydytojai"/>
+                <xs:element name = "liga" type = "ligosTipas"/>
+            </xs:sequence>
+            <xs:attribute name = "id" type = "xs:positiveInteger" use = "required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="gydytojai">
+        <xs:complexType>
+            <xs:sequence maxOccurs="unbounded">
+                <xs:element ref = "gydytojas"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+   
+    <xs:element name = "gydytojas" type = "xs:string"/>
+
+
+
+    <xs:complexType name = "ligosTipas">
+        <xs:simpleContent>
+            <xs:extension base = "xs:string">
+                <xs:attribute name = "pavojaus_procentas">
+                    <xs:simpleType>
+                        <xs:restriction base = "xs:integer">
+                            <xs:minInclusive value="0"/>
+                            <xs:maxInclusive value="100"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>    
+</xs:schema>
