@@ -33,12 +33,56 @@
                     "required" : ["daktarai","seseles"]
                 }
             },
-            "required" : ["medicijos_personalas"]
+            "required" : ["medicinos_personalas"]
         },
         "pacientai":{
-            "type" : "object"
-        },
-        "required": ["personalas","pacientai"]
+            "type" : "object",
+            "properties": {
+                "pacientas":{
+                    "allOf":[
+                        {"$ref": "#/definitions/zmogus"},
+                        {"properties": {
+                            "lytis" : {"type" : "string"},
+                            "palata" : {"type" : "integer"},
+                            "gydytojai" : { "type" : "object",
+                                "type": "object",
+                                "properties": {
+                                "gydytojas": {
+                                    "type": "array",
+                                    "items": [
+                                    {
+                                        "type": "string"
+                                    }
+                                    ]
+                                }
+                                },
+                                "required": [
+                                "gydytojas"
+                                ]
+
+                            },
+                            "liga": {
+                                "type": "object",
+                                "properties": {
+                                  "@pavojaus_procentas": {
+                                    "type": "integer"
+                                  },
+                                  "#text": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "@pavojaus_procentas",
+                                  "#text"
+                                ]
+                              }
+                        }
+                    }
+                    ]
+                }
+            }
+        }
+        
     },
     "definitions": {
         "zmogus": {
