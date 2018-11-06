@@ -6,11 +6,11 @@
             "type" : "object",
             "properties": {
                 "medicinos_personalas":{
-                    "type" : "array",
-                    "items" : {
+                    "type" : "object",
+                    "properties" : {
                         "daktarai" : {
-                            "type" : "object",
-                            "properties": {
+                            "type" : "array",
+                            "items": {
                                 "daktaras" : {
                                     "allOf": [
                                         {"$ref": "#/definitions/zmogus"},
@@ -19,9 +19,10 @@
                                 }
                             }
                         },
+                        
                         "seseles" : {                            
-                            "type" : "object",
-                            "properties": {
+                            "type" : "array",
+                            "items": {
                                 "daktaras" : {
                                     "allOf": [
                                         {"$ref": "#/definitions/zmogus"},
