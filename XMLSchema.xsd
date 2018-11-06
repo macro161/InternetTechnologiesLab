@@ -9,6 +9,11 @@
         </xs:complexType>
     </xs:element>
 
+    <xs:unique name="ArtistKey">
+			<xs:selector xpath="Artists/Artist"/>
+			<xs:field xpath="#seseles/sesele"/>
+	</xs:unique>
+
     <xs:element name="personalas">
         <xs:complexType>
             <xs:sequence maxOccurs="1">
@@ -35,17 +40,26 @@
         </xs:complexType>
     </xs:element>
 
+    <xs:complexType name="zmogus">
+        <xs:sequence>
+            <xs:element name="vardas" type="xs:string"/>
+            <xs:element name="pavarde" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>    
+
     <xs:element  name="daktaras">
         <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="zmogus">
                     <xs:sequence>
-                        <xs:element name = "vardas" type = "xs:string"/>
-                        <xs:element name = "pavarde" type = "xs:string"/>
                         <xs:element name = "gimimo_metai" type = "gimimoMetuTipas"/>
                         <xs:element name = "alga" type = "algosTipas"/>                       
                         <xs:element name = "darbo_patirtis" type="darboPatirtiesTipas" maxOccurs="1"/>
                         <xs:element name = "palatos" type="palatosTipas"/>
                     </xs:sequence>
-                    <xs:attribute name = "id" type = "xs:positiveInteger" use = "required"/>       
+                    <xs:attribute name = "id" type = "xs:positiveInteger" use = "required"/>
+                </xs:extention>
+            </xs:complexContent>       
         </xs:complexType>
     </xs:element>
 
@@ -105,19 +119,35 @@
         </xs:complexType>
     </xs:element>
 
-    <xs:element name="sesele">
+    <xs:element  name="sesele">
         <xs:complexType>
+            <xs:complexContent>
+                <xs:restriction base="seseleSimple">
                 <xs:sequence>
+                        <xs:element name = "vardas" type = "xs:string"/>
+                        <xs:element name = "pavarde" type = "xs:string"/>
+                        <xs:element name = "gimimo_metai" type = "gimimoMetuTipas"/>
+                        <xs:element name = "alga" type = "algosTipas"/>
+                        <xs:element name = "darbo_patirtis" type="darboPatirtiesTipas" maxOccurs="1"/>
+                        <xs:element name = "palatos" type="palatosTipas"/>
+                </xs:sequence>
+                <xs:attribute name = "id" type = "xs:positiveInteger" />
+                </xs:extention>
+            </xs:complexContent>       
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="seselesSimple">
+        <xs:sequence>
                 <xs:element name = "vardas" type = "xs:string"/>
                 <xs:element name = "pavarde" type = "xs:string"/>
                 <xs:element name = "gimimo_metai" type = "gimimoMetuTipas"/>
                 <xs:element name = "alga" type = "algosTipas"/>
                 <xs:element name = "darbo_patirtis" type="darboPatirtiesTipas" maxOccurs="1"/>
                 <xs:element name = "palatos" type="palatosTipas"/>
-            </xs:sequence>
-            <xs:attribute name = "id" type = "xs:positiveInteger" use = "required"/>
-        </xs:complexType>
-    </xs:element>
+        </xs:sequence>
+        <xs:attribute name = "id" type = "xs:positiveInteger"/>
+    </xs:complexType> 
 
     <xs:element name="pacientai">
         <xs:complexType>
@@ -137,6 +167,14 @@
                 <xs:element name = "palata" type="xs:integer"/>
                 <xs:element ref = "gydytojai"/>
                 <xs:element name = "liga" type = "ligosTipas"/>
+                <xs:element name = "ligos_istorija">
+                    <xs:complexType mixed="true">
+                        <xs:sequence>
+                        <xs:element name="ligu_sarasas" type="xs:string"/>
+                        <xs:element name="paskirti_gydymai" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>                    
+                </xs:element>
             </xs:sequence>
             <xs:attribute name = "id" type = "xs:positiveInteger" use = "required"/>
         </xs:complexType>
@@ -151,8 +189,6 @@
     </xs:element>
    
     <xs:element name = "gydytojas" type = "xs:string"/>
-
-
 
     <xs:complexType name = "ligosTipas">
         <xs:simpleContent>

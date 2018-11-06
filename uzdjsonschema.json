@@ -6,8 +6,8 @@
             "type" : "object",
             "properties": {
                 "medicinos_personalas":{
-                    "type" : "object",
-                    "properties" : {
+                    "type" : "array",
+                    "items" : {
                         "daktarai" : {
                             "type" : "object",
                             "properties": {

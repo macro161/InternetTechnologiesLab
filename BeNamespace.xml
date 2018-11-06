@@ -53,6 +53,7 @@
                 <gydytojas id="6873"> Greta Gretaitė </gydytojas>
             </gydytojai>
             <liga pavojaus_procentas="5">Plaučių uždegimas</liga>
+            <ligos_istorija>Idagnozuotos sios ligos <ligu_sarasas> liga liga liga </ligu_sarasas> ir paskirti tokie gydymai <paskirti_gydymai>gydymai gydymai gydymai</paskirti_gydymai> </ligos_istorija>
         </pacientas>
 
         <pacientas id="7488">
@@ -66,6 +67,7 @@
                 <gydytojas id="5168"> Petras Petrauskas </gydytojas>
             </gydytojai>
             <liga pavojaus_procentas="25" >Kepenų nepakankamumas</liga>
+            <ligos_istorija>Idagnozuotos sios ligos <ligu_sarasas> liga liga liga </ligu_sarasas> ir paskirti tokie gydymai <paskirti_gydymai>gydymai gydymai gydymai</paskirti_gydymai> </ligos_istorija>
         </pacientas>
 
         <pacientas id="1598">
