@@ -1,0 +1,103 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type" : "object",
+    "properties": {
+        "personalas": {
+            "type" : "object",
+            "properties": {
+                "medicinos_personalas":{
+                    "type" : "object",
+                    "properties" : {
+                        "daktarai" : {
+                            "type" : "object",
+                            "properties": {
+                                "daktaras" : {
+                                    "allOf": [
+                                        {"$ref": "#/definitions/zmogus"},
+                                        {"$ref": "#/definitions/darbuotojas"}
+                                    ]
+                                }
+                            }
+                        },
+                        "seseles" : {                            
+                            "type" : "object",
+                            "properties": {
+                                "daktaras" : {
+                                    "allOf": [
+                                        {"$ref": "#/definitions/zmogus"},
+                                        {"$ref": "#/definitions/darbuotojas"}
+                                    ]
+                                }
+                            }}
+                    },
+                    "required" : ["daktarai","seseles"]
+                }
+            },
+            "required" : ["medicijos_personalas"]
+        },
+        "pacientai":{
+            "type" : "object"
+        },
+        "required": ["personalas","pacientai"]
+    },
+    "definitions": {
+        "zmogus": {
+          "type": "object",
+          "properties": {
+            "vardas" : {"type" : "string", "pattern": "[a-zA-Z]"},
+            "pavarde" : {"type" : "string", "pattern": "[a-zA-Z]"},
+            "gimimo_metai" : {"type" : "string", "format": "date-time"}
+        },
+          "required": ["varadas", "pavarde", "gimimo_metai"]
+        },
+        "darbuotojas": {
+            "type": "object",
+            "properties": {
+                "alga": {
+                    "type": "object",
+                    "properties": {
+                      "@valiuta": {
+                        "type": "string",
+                        "enum": ["EU","USD","RUB"]
+                      },
+                      "#value": {
+                        "type": "number",
+                        "minumum": 0,
+                        "maximum": 50000,
+                        "exclusiveMaximum": true
+                      }
+                    },
+                    "required": [
+                      "@valiuta",
+                      "#value"
+                    ]
+                  },
+                  "darbo_patirtis": {
+                    "type": "object",
+                    "properties": {
+                      "@trukme": {
+                        "type": "string"
+                      },
+                      "#value": {
+                        "type": "integer"
+                      }
+                    },
+                    "required": [
+                      "@trukme",
+                      "#value"
+                    ]
+                  },
+                  "palatos": {
+                    "type": "array",
+                    "items": {
+                      "type": "integer"
+                    },
+                    "minItems": 1,
+                    "maxItems": 10,
+                    "uniqueItems": true
+                  }
+            },
+            "required": ["alga","darbo_patirtis","palatos"]
+        }
+    }
+}

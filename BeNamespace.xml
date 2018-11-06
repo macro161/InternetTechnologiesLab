@@ -49,8 +49,8 @@
             <lytis> Vyras </lytis>
             <palata> 356 </palata>
             <gydytojai> 
-                <gydytojas> Petras Petrauskas </gydytojas>
-                <gydytojas> Greta Gretaitė </gydytojas>
+                <gydytojas id="5168"> Petras Petrauskas </gydytojas>
+                <gydytojas id="6873"> Greta Gretaitė </gydytojas>
             </gydytojai>
             <liga pavojaus_procentas="5">Plaučių uždegimas</liga>
         </pacientas>
@@ -62,8 +62,8 @@
             <lytis> Moteris </lytis>
             <palata> 258 </palata>
             <gydytojai> 
-                <gydytojas> Kazys Kaziliauskas </gydytojas>
-                <gydytojas> Petras Petrauskas </gydytojas>
+                <gydytojas id="3578"> Kazys Kaziliauskas </gydytojas>
+                <gydytojas id="5168"> Petras Petrauskas </gydytojas>
             </gydytojai>
             <liga pavojaus_procentas="25" >Kepenų nepakankamumas</liga>
         </pacientas>
@@ -75,8 +75,8 @@
             <lytis> Moteris </lytis>
             <palata> 198 </palata>
             <gydytojai> 
-                <gydytojas> Kazys Kaziliauskas </gydytojas>
-                <gydytojas> Agnė Agnevičienė </gydytojas>
+                <gydytojas id="3578"> Kazys Kaziliauskas </gydytojas>
+                <gydytojas id="5852"> Agnė Agnevičienė </gydytojas>
             </gydytojai>
             <liga pavojaus_procentas="95">Smegenų auglys</liga>
         </pacientas>

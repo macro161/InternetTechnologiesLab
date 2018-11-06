@@ -1,0 +1,623 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+      "personalas": {
+        "type": "object",
+        "properties": {
+          "medicinos_personalas": {
+            "type": "object",
+            "properties": {
+              "daktarai": {
+                "type": "object",
+                "properties": {
+                  "daktaras": {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "@id": {
+                            "type": "integer"
+                          },
+                          "vardas": {
+                            "type": "string"
+                          },
+                          "pavarde": {
+                            "type": "string"
+                          },
+                          "gimimo_metai": {
+                            "type": "string"
+                          },
+                          "alga": {
+                            "type": "object",
+                            "properties": {
+                              "@valiuta": {
+                                "type": "string"
+                              },
+                              "#value": {
+                                "type": "number"
+                              }
+                            },
+                            "required": [
+                              "@valiuta",
+                              "#value"
+                            ]
+                          },
+                          "darbo_patirtis": {
+                            "type": "object",
+                            "properties": {
+                              "@trukme": {
+                                "type": "string"
+                              },
+                              "#value": {
+                                "type": "integer"
+                              }
+                            },
+                            "required": [
+                              "@trukme",
+                              "#value"
+                            ]
+                          },
+                          "pacientai": {
+                            "type": "object",
+                            "properties": {
+                              "pacientas": {
+                                "type": "array",
+                                "items": [
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "@id": {
+                                        "type": "integer"
+                                      },
+                                      "#text": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "@id",
+                                      "#text"
+                                    ]
+                                  },
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "@id": {
+                                        "type": "integer"
+                                      },
+                                      "#text": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "@id",
+                                      "#text"
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            "required": [
+                              "pacientas"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "@id",
+                          "vardas",
+                          "pavarde",
+                          "gimimo_metai",
+                          "alga",
+                          "darbo_patirtis",
+                          "pacientai"
+                        ]
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "@id": {
+                            "type": "integer"
+                          },
+                          "vardas": {
+                            "type": "string"
+                          },
+                          "pavarde": {
+                            "type": "string"
+                          },
+                          "gimimo_metai": {
+                            "type": "string"
+                          },
+                          "alga": {
+                            "type": "object",
+                            "properties": {
+                              "@valiuta": {
+                                "type": "string"
+                              },
+                              "#value": {
+                                "type": "number"
+                              }
+                            },
+                            "required": [
+                              "@valiuta",
+                              "#value"
+                            ]
+                          },
+                          "darbo_patirtis": {
+                            "type": "object",
+                            "properties": {
+                              "@trukme": {
+                                "type": "string"
+                              },
+                              "#value": {
+                                "type": "integer"
+                              }
+                            },
+                            "required": [
+                              "@trukme",
+                              "#value"
+                            ]
+                          },
+                          "pacientai": {
+                            "type": "object",
+                            "properties": {
+                              "pacientas": {
+                                "type": "object",
+                                "properties": {
+                                  "@id": {
+                                    "type": "integer"
+                                  },
+                                  "#text": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "@id",
+                                  "#text"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "pacientas"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "@id",
+                          "vardas",
+                          "pavarde",
+                          "gimimo_metai",
+                          "alga",
+                          "darbo_patirtis",
+                          "pacientai"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "daktaras"
+                ]
+              },
+              "seseles": {
+                "type": "object",
+                "properties": {
+                  "sesele": {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "@id": {
+                            "type": "integer"
+                          },
+                          "vardas": {
+                            "type": "string"
+                          },
+                          "pavarde": {
+                            "type": "string"
+                          },
+                          "gimimo_metai": {
+                            "type": "string"
+                          },
+                          "alga": {
+                            "type": "object",
+                            "properties": {
+                              "@valiuta": {
+                                "type": "string"
+                              },
+                              "#value": {
+                                "type": "number"
+                              }
+                            },
+                            "required": [
+                              "@valiuta",
+                              "#value"
+                            ]
+                          },
+                          "darbo_patirtis": {
+                            "type": "object",
+                            "properties": {
+                              "@trukme": {
+                                "type": "string"
+                              },
+                              "#value": {
+                                "type": "integer"
+                              }
+                            },
+                            "required": [
+                              "@trukme",
+                              "#value"
+                            ]
+                          },
+                          "pacientai": {
+                            "type": "object",
+                            "properties": {
+                              "pacientas": {
+                                "type": "object",
+                                "properties": {
+                                  "@id": {
+                                    "type": "integer"
+                                  },
+                                  "#text": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "@id",
+                                  "#text"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "pacientas"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "@id",
+                          "vardas",
+                          "pavarde",
+                          "gimimo_metai",
+                          "alga",
+                          "darbo_patirtis",
+                          "pacientai"
+                        ]
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "@id": {
+                            "type": "integer"
+                          },
+                          "vardas": {
+                            "type": "string"
+                          },
+                          "pavarde": {
+                            "type": "string"
+                          },
+                          "gimimo_metai": {
+                            "type": "string"
+                          },
+                          "alga": {
+                            "type": "object",
+                            "properties": {
+                              "@valiuta": {
+                                "type": "string"
+                              },
+                              "#value": {
+                                "type": "number"
+                              }
+                            },
+                            "required": [
+                              "@valiuta",
+                              "#value"
+                            ]
+                          },
+                          "darbo_patirtis": {
+                            "type": "object",
+                            "properties": {
+                              "@trukme": {
+                                "type": "string"
+                              },
+                              "#value": {
+                                "type": "integer"
+                              }
+                            },
+                            "required": [
+                              "@trukme",
+                              "#value"
+                            ]
+                          },
+                          "pacientai": {
+                            "type": "object",
+                            "properties": {
+                              "pacientas": {
+                                "type": "array",
+                                "items": [
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "@id": {
+                                        "type": "integer"
+                                      },
+                                      "#text": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "@id",
+                                      "#text"
+                                    ]
+                                  },
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "@id": {
+                                        "type": "integer"
+                                      },
+                                      "#text": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "@id",
+                                      "#text"
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            "required": [
+                              "pacientas"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "@id",
+                          "vardas",
+                          "pavarde",
+                          "gimimo_metai",
+                          "alga",
+                          "darbo_patirtis",
+                          "pacientai"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "sesele"
+                ]
+              }
+            },
+            "required": [
+              "daktarai",
+              "seseles"
+            ]
+          }
+        },
+        "required": [
+          "medicinos_personalas"
+        ]
+      },
+      "pacientai": {
+        "type": "object",
+        "properties": {
+          "pacientas": {
+            "type": "array",
+            "items": [
+              {
+                "type": "object",
+                "properties": {
+                  "@id": {
+                    "type": "integer"
+                  },
+                  "vardas": {
+                    "type": "string"
+                  },
+                  "pavarde": {
+                    "type": "string"
+                  },
+                  "gimimo_metai": {
+                    "type": "string"
+                  },
+                  "lytis": {
+                    "type": "string"
+                  },
+                  "palata": {
+                    "type": "integer"
+                  },
+                  "gydytojai": {
+                    "type": "object",
+                    "properties": {
+                      "gydytojas": {
+                        "type": "array",
+                        "items": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "string"
+                          }
+                        ]
+                      }
+                    },
+                    "required": [
+                      "gydytojas"
+                    ]
+                  },
+                  "liga": {
+                    "type": "object",
+                    "properties": {
+                      "@pavojaus_procentas": {
+                        "type": "integer"
+                      },
+                      "#text": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "@pavojaus_procentas",
+                      "#text"
+                    ]
+                  }
+                },
+                "required": [
+                  "@id",
+                  "vardas",
+                  "pavarde",
+                  "gimimo_metai",
+                  "lytis",
+                  "palata",
+                  "gydytojai",
+                  "liga"
+                ]
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "@id": {
+                    "type": "integer"
+                  },
+                  "vardas": {
+                    "type": "string"
+                  },
+                  "pavarde": {
+                    "type": "string"
+                  },
+                  "gimimo_metai": {
+                    "type": "string"
+                  },
+                  "lytis": {
+                    "type": "string"
+                  },
+                  "palata": {
+                    "type": "integer"
+                  },
+                  "gydytojai": {
+                    "type": "object",
+                    "properties": {
+                      "gydytojas": {
+                        "type": "array",
+                        "items": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "string"
+                          }
+                        ]
+                      }
+                    },
+                    "required": [
+                      "gydytojas"
+                    ]
+                  },
+                  "liga": {
+                    "type": "object",
+                    "properties": {
+                      "@pavojaus_procentas": {
+                        "type": "integer"
+                      },
+                      "#text": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "@pavojaus_procentas",
+                      "#text"
+                    ]
+                  }
+                },
+                "required": [
+                  "@id",
+                  "vardas",
+                  "pavarde",
+                  "gimimo_metai",
+                  "lytis",
+                  "palata",
+                  "gydytojai",
+                  "liga"
+                ]
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "@id": {
+                    "type": "integer"
+                  },
+                  "vardas": {
+                    "type": "string"
+                  },
+                  "pavarde": {
+                    "type": "string"
+                  },
+                  "gimimo_metai": {
+                    "type": "string"
+                  },
+                  "lytis": {
+                    "type": "string"
+                  },
+                  "palata": {
+                    "type": "integer"
+                  },
+                  "gydytojai": {
+                    "type": "object",
+                    "properties": {
+                      "gydytojas": {
+                        "type": "array",
+                        "items": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "string"
+                          }
+                        ]
+                      }
+                    },
+                    "required": [
+                      "gydytojas"
+                    ]
+                  },
+                  "liga": {
+                    "type": "object",
+                    "properties": {
+                      "@pavojaus_procentas": {
+                        "type": "integer"
+                      },
+                      "#text": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "@pavojaus_procentas",
+                      "#text"
+                    ]
+                  }
+                },
+                "required": [
+                  "@id",
+                  "vardas",
+                  "pavarde",
+                  "gimimo_metai",
+                  "lytis",
+                  "palata",
+                  "gydytojai",
+                  "liga"
+                ]
+              }
+            ]
+          }
+        },
+        "required": [
+          "pacientas"
+        ]
+      }
+    },
+    "required": [
+      "personalas",
+      "pacientai"
+    ]
+  }
