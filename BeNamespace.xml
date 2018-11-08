@@ -49,8 +49,8 @@
             <lytis> Vyras </lytis>
             <palata> 356 </palata>
             <gydytojai> 
-                <gydytojas id="5168"> Petras Petrauskas </gydytojas>
-                <gydytojas id="6873"> Greta Gretaitė </gydytojas>
+                <gydytojas> Petras Petrauskas </gydytojas>
+                <gydytojas> Greta Gretaitė </gydytojas>
             </gydytojai>
             <liga pavojaus_procentas="5">Plaučių uždegimas</liga>
             <ligos_istorija>Idagnozuotos sios ligos <ligu_sarasas> liga liga liga </ligu_sarasas> ir paskirti tokie gydymai <paskirti_gydymai>gydymai gydymai gydymai</paskirti_gydymai> </ligos_istorija>
@@ -63,8 +63,8 @@
             <lytis> Moteris </lytis>
             <palata> 258 </palata>
             <gydytojai> 
-                <gydytojas id="3578"> Kazys Kaziliauskas </gydytojas>
-                <gydytojas id="5168"> Petras Petrauskas </gydytojas>
+                <gydytojas> Kazys Kaziliauskas </gydytojas>
+                <gydytojas> Petras Petrauskas </gydytojas>
             </gydytojai>
             <liga pavojaus_procentas="25" >Kepenų nepakankamumas</liga>
             <ligos_istorija>Idagnozuotos sios ligos <ligu_sarasas> liga liga liga </ligu_sarasas> ir paskirti tokie gydymai <paskirti_gydymai>gydymai gydymai gydymai</paskirti_gydymai> </ligos_istorija>
@@ -77,10 +77,11 @@
             <lytis> Moteris </lytis>
             <palata> 198 </palata>
             <gydytojai> 
-                <gydytojas id="3578"> Kazys Kaziliauskas </gydytojas>
-                <gydytojas id="5852"> Agnė Agnevičienė </gydytojas>
+                <gydytojas> Kazys Kaziliauskas </gydytojas>
+                <gydytojas> Agnė Agnevičienė </gydytojas>
             </gydytojai>
             <liga pavojaus_procentas="95">Smegenų auglys</liga>
+            <ligos_istorija>Idagnozuotos sios ligos <ligu_sarasas> liga liga liga </ligu_sarasas> ir paskirti tokie gydymai <paskirti_gydymai>gydymai gydymai gydymai</paskirti_gydymai> </ligos_istorija>
         </pacientas>
     </pacientai>
 </ligonine>

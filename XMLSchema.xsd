@@ -9,10 +9,7 @@
         </xs:complexType>
     </xs:element>
 
-    <xs:unique name="ArtistKey">
-			<xs:selector xpath="Artists/Artist"/>
-			<xs:field xpath="#seseles/sesele"/>
-	</xs:unique>
+
 
     <xs:element name="personalas">
         <xs:complexType>
@@ -58,7 +55,7 @@
                         <xs:element name = "palatos" type="palatosTipas"/>
                     </xs:sequence>
                     <xs:attribute name = "id" type = "xs:positiveInteger" use = "required"/>
-                </xs:extention>
+                </xs:extension>
             </xs:complexContent>       
         </xs:complexType>
     </xs:element>
@@ -132,12 +129,12 @@
                         <xs:element name = "palatos" type="palatosTipas"/>
                 </xs:sequence>
                 <xs:attribute name = "id" type = "xs:positiveInteger" />
-                </xs:extention>
+                </xs:restriction>
             </xs:complexContent>       
         </xs:complexType>
     </xs:element>
 
-    <xs:complexType name="seselesSimple">
+    <xs:complexType name="seseleSimple">
         <xs:sequence>
                 <xs:element name = "vardas" type = "xs:string"/>
                 <xs:element name = "pavarde" type = "xs:string"/>
