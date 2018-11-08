@@ -45,22 +45,10 @@
                         {"properties": {
                             "lytis" : {"type" : "string"},
                             "palata" : {"type" : "integer"},
-                            "gydytojai" : { "type" : "object",
-                                "type": "object",
-                                "properties": {
-                                "gydytojas": {
-                                    "type": "array",
-                                    "items": [
-                                    {
-                                        "type": "string"
-                                    }
-                                    ]
+                            "gydytojai" : { "type" : "array",
+                                "items" : {
+                                    "type": "string"
                                 }
-                                },
-                                "required": [
-                                "gydytojas"
-                                ]
-
                             },
                             "liga": {
                                 "type": "object",
@@ -87,8 +75,8 @@
     },
     "definitions": {
         "zmogus": {
-          "type": "object",
-          "properties": {
+          "type": "array",
+          "items": {
             "vardas" : {"type" : "string", "pattern": "[a-zA-Z]"},
             "pavarde" : {"type" : "string", "pattern": "[a-zA-Z]"},
             "gimimo_metai" : {"type" : "string", "format": "date-time"}
