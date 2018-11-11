@@ -1,7 +1,49 @@
-table,
-th,
-td {
+article  table {
     border: 1px solid black;
+}
+article  th {
+    border: 1px solid red;
+}
+article  td {
+    border: 1px solid green;
 }
 
 li > time {color: red}
+
+img.reklama {
+    height: 100px;
+    width: 500px;
+    overflow: hidden;
+}
+
+#tekstas{
+    font-size:50px;
+    border: 5px solid blue
+}
+
+*[value="g"] {
+    color: greenyellow;
+}
+
+p {
+    color: red !important;
+}
+#imp {
+    color: green;
+}
+
+body {
+    background-color: yellow;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+
+
+
+
+
