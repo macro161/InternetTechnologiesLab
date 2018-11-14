@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./stilius.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
     <title>Ligonine</title>
 </head>
 
@@ -23,24 +26,29 @@
             <li><a href="./kontaktai.html">Kontaktai</a></li>
         </ul>
     </nav>
-    <section id="">
+    <section>
         <h2 id="tekstas">Registracijos forma</h2>
         <article>
             <h3>Asmeninė informacija</h3>
             <form action="./kontaktai.html">
-                Vardas <br><input type="text" name="vardas" value=""> <br>
-                Pavardė <br><input type="text" name="pavarde" value=""> <br>
-                Gimimo metai <br> <input type="date" name="bday"> <br>
-                Telefono nr. <br> <input type="tel" name="usrtel"> <br>
-                El. paštas <br> <input type="email" name="email"> <br>
+                Vardas <br><input id="nameField" type="text" name="vardas" value=""> <br>
+                Pavardė <br><input id="surnameField" type="text" name="pavarde" value=""> <br>
+                Gimimo metai <br> <input id="dateField" type="date" name="bday"> <br>
+                Telefono nr. <br> <input id="phoneNumber" type="tel" name="usrtel"> <br>
+                El. paštas <br> <input id="emailField" type="email" name="email"> <br>
+                Asmens kodas <br> <input id="randomNum" type="text" name="rannum"> <br>
                 <select size="1" name="skyrius">
                     <OPTION selected value="r">Akiū ligų skyrius</OPTION>
                     <OPTION value="g">Chirurgijos skyrius</OPTION>
                     <OPTION value="z">Traumatologijos skyrius</OPTION>
                     <OPTION value="m">Psichikos skyrius</OPTION>
                 </select> <br>
+                Slepti slapta teksta <input type="checkbox" name="checkIt" value="check" onclick="hiden(this)"> 
+                <br>
+                <p id="hideIt">Super slaptas tekstas</p>
                 <input type="reset" value="Ištrinti">
-                <input type="submit" value="Patvirtinti">
+                <input type="submit" value="Patvirtinti" onclick="return validate()">
+                
             </form>
         </article>
     </section>
