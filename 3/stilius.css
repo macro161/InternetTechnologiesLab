@@ -8,7 +8,11 @@ article  td {
     border: 1px solid green;
 }
 
-li > time {color: red}
+li time {
+    color: red;
+}
+
+ul > li {color: blue}
 
 img.reklama {
     height: 100px;
@@ -28,6 +32,11 @@ img.reklama {
 p {
     color: red !important;
 }
+
+p {
+    color: green;
+}
+
 #imp {
     color: green;
 }
@@ -41,6 +50,8 @@ body {
         background-color: lightblue;
     }
 }
+
+a {color: inherit;}
 
 
 
