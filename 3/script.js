@@ -5,7 +5,7 @@ function emptyField(){
 function validate()
 {
     if(validateEmpty() == false || validateNumber() == false){
-        window.alert("Viskasi bliogai");
+        window.alert("Viskas blogai");
         return false;
     };
     return true;
@@ -35,8 +35,26 @@ function validateNumber()
 
 function hiden(obj){
    if(obj.checked == true){
-    $("#hideIt").hide();}
+    $("#hideIt").hide();
+    $("#tekstoKeitimas").text("Rodyti slapta teksta");
+    $("#tekstoKeitimas").css('background-color','blue');
+    }
     else{
+        $("#tekstoKeitimas").text("Slepti slapta teksta");
+        $("#tekstoKeitimas").css('background-color','green');
         $("#hideIt").show();
     }
+}
+
+function naikink(){
+    var para = document.getElementById("paragrafas").value;
+    para = "." + para
+    console.log(para);
+    $( para ).remove();
+}
+
+function prideti(){
+    var text = document.getElementById("paragrafas").value;
+    text = "<p>" + text + "</p>"
+    $(".naikinti").append(text);
 }
