@@ -8,6 +8,7 @@ function validate()
         window.alert("Viskas blogai");
         return false;
     };
+    serializer();
     return true;
 }
 
@@ -57,4 +58,9 @@ function prideti(){
     var text = document.getElementById("paragrafas").value;
     text = "<p>" + text + "</p>"
     $(".naikinti").append(text);
+}
+
+function serializer(){
+    var formData = $("form.login").serializeObject();
+    console.log(formData);
 }

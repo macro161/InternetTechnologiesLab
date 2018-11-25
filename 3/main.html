@@ -30,7 +30,7 @@
         <h2 id="tekstas">Registracijos forma</h2>
         <article>
             <h3>Asmeninė informacija</h3>
-            <form action="./kontaktai.html">
+            <form class="forma" >
                 Vardas <br><input id="nameField" type="text" name="vardas" value=""> <br>
                 Pavardė <br><input id="surnameField" type="text" name="pavarde" value=""> <br>
                 Gimimo metai <br> <input id="dateField" type="date" name="bday"> <br>
@@ -42,26 +42,26 @@
                     <OPTION value="g">Chirurgijos skyrius</OPTION>
                     <OPTION value="z">Traumatologijos skyrius</OPTION>
                     <OPTION value="m">Psichikos skyrius</OPTION>
-                </select> <br>
-                <p id="tekstoKeitimas">Slepti slapta teksta</p> <input type="checkbox" name="checkIt" value="check" onclick="hiden(this)"> 
+                </select>
                 <br>
-                <p id="hideIt">Super slaptas tekstas</p>
                 <input type="reset" value="Ištrinti">
-                <input type="submit" value="Patvirtinti" onclick="return validate()">
-                <br>
-                <input input id="paragrafas" type="text" name="paragrafas" value="">
-                <input type="button" value="trinti" onclick="naikink()">
-                <input type="button" value="prideti" onclick="prideti()">
-
-                <div class="naikinti">
-                    <p class="1">Pirmas tekstas</p>
-                    <p class="2">Antras tekstas</p>
-                    <p class="3">Trecias tekstas</p>
-                    <p class="4">Ketvirtas tekstas</p>
-                    <p class="5">Penktas tekstas</p>
-                </div>
-                
+                <input type="button" value="Patvirtinti" onclick="serializer()">     
             </form>
+            <p id="tekstoKeitimas">Slepti slapta teksta</p> <input type="checkbox" name="checkIt" value="check" onclick="hiden(this)"> 
+            <br>
+            <p id="hideIt">Super slaptas tekstas</p>
+            <br>
+            <input input id="paragrafas" type="text" name="paragrafas" value="">
+            <input type="button" value="trinti" onclick="naikink()">
+            <input type="button" value="prideti" onclick="prideti()">
+
+            <div class="naikinti">
+                <p class="1">Pirmas tekstas</p>
+                <p class="2">Antras tekstas</p>
+                <p class="3">Trecias tekstas</p>
+                <p class="4">Ketvirtas tekstas</p>
+                <p class="5">Penktas tekstas</p>
+            </div>
         </article>
     </section>
     <aside>
