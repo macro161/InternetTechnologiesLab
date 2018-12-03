@@ -37,11 +37,11 @@ function validateNumber()
 function hiden(obj){
    if(obj.checked == true){
     $("#hideIt").hide();
-    $("#tekstoKeitimas").text("Rodyti slapta teksta");
+    $("#tekstoKeitimas").text("Draudimo neturi");
     $("#tekstoKeitimas").css('background-color','blue');
     }
     else{
-        $("#tekstoKeitimas").text("Slepti slapta teksta");
+        $("#tekstoKeitimas").text("Draudima turi");
         $("#tekstoKeitimas").css('background-color','green');
         $("#hideIt").show();
     }
@@ -50,7 +50,6 @@ function hiden(obj){
 function naikink(){
     var para = document.getElementById("paragrafas").value;
     para = "." + para
-    console.log(para);
     $( para ).remove();
 }
 
@@ -60,7 +59,35 @@ function prideti(){
     $(".naikinti").append(text);
 }
 
-function serializer(){
-    var formData = $("form.login").serializeObject();
-    console.log(formData);
+function showValues() {
+    var value = $( ":input" ).serializeArray();
+    var data = JSON.stringify(value);
+    $.ajax({
+        url: "https://api.myjson.com/bins",
+        type: "POST",
+        data: data,
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (data, textStatus, jqXHR) {
+            $.get(data.uri, function (data, textStatus, jqXHR) {
+                var json = JSON.stringify(data);
+                $("#data").val(json);
+                $("#jsonVardas").html(data[0].value);
+                $("#jsonPavarde").html(data[1].value);
+                $("#jsonDate").html(data[2].value);
+                $("#jsonTlf").html(data[3].value);
+                $("#jsonEmail").html(data[4].value);
+                $("#jsonCode").html(data[5].value);
+                $("#jsonSkyrius").html(data[6].value);
+            });
+
+        }
+    });
 }
+
+
+
+
+
+
+
