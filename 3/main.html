@@ -37,11 +37,12 @@
                 Telefono nr. <br> <input id="phoneNumber" type="tel" name="usrtel"> <br>
                 El. paštas <br> <input id="emailField" type="email" name="email"> <br>
                 Asmens kodas <br> <input id="randomNum" type="text" name="rannum"> <br>
+                Iki kada liks ligoninėj <br> <input id="stayUntil" type="text" name="stayDate"> <br>
                 <select size="1" name="skyrius">
-                    <OPTION selected value="r">Akiū ligų skyrius</OPTION>
-                    <OPTION value="g">Chirurgijos skyrius</OPTION>
-                    <OPTION value="z">Traumatologijos skyrius</OPTION>
-                    <OPTION value="m">Psichikos skyrius</OPTION>
+                    <OPTION selected value="Akiū ligų skyrius">Akiū ligų skyrius</OPTION>
+                    <OPTION value="Chirurgijos skyrius">Chirurgijos skyrius</OPTION>
+                    <OPTION value="Traumatologijos skyrius">Traumatologijos skyrius</OPTION>
+                    <OPTION value="Psichikos skyrius">Psichikos skyrius</OPTION>
                 </select>
                 <br>
                 <input type="reset" value="Ištrinti">
@@ -92,6 +93,10 @@
                 <tr>
                     <td>Skyrius</td>
                     <td id="jsonSkyrius"></td>
+                </tr>
+                <tr>
+                    <td>Iki kada liks</td>
+                    <td id="jsonStay"></td>
                 </tr>
             </table>
         </article>
